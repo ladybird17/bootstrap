@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부트스트랩 기본 테마 색상</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <!--
+    <부트스트랩 기본 테마 색상>
+
+    1. 글자색
+    text-muted, text-primary, text-success, text-warning, text-danger,
+    text-secondary, text-white, text-dark, text-body, text-light, text-info
+
+    - 기본색상 8가지 : primary(파란색), secondary(회색), success(초록색),
+    warning(노란색), danger(빨간색), info(청록색), light(흰색), dark(검정)
+
+    text-라는 접미사 뒤에 부트스트랩 테마 색상명을 입력하면 해당 글자색 사용 가능
+    -->
+
+    <div class="container">
+        <h3>글자 색상 사용</h3>
+        <div>
+            <p class="text-primary">text-primary 사용</p>
+            <p class="text-success">text-success 사용</p>
+            <p class="text-info">text-info 사용</p>
+            <p class="text-warning">text-warning 사용</p>
+            <p class="text-danger">text-danger 사용</p>
+
+            <p class="text-secondary">text-secondary 사용</p>
+            <p class="text-muted">text-muted 사용</p>
+            <p class="text-light bg-dark p-3">text-light 사용</p> <!-- light는 아주 연회색, white는 기본 화이트-->
+            <p class="text-white bg-dark p-3">text-white 사용</p>
+            <p class="text-dark">text-dark 사용</p> <!-- dark는 아주 진회색, body는 기본 블랙-->
+            <p class="text-body">text-body 사용</p>
+
+            <a href="https://www.daum.net" class="text-info text-decoration-none">다음 홈페이지</a>
+        </div>
+
+        <br><hr><br>
+
+        <h3>배경 색상 사용</h3>
+        <!--
+        배경색상은 부트스트랩 기본 테만 컬러만 사용
+        접두사 bg-다음에 테마 색상명을 입력하면 해당 색상 사용
+         -->
+        <div>
+            <p class="bg-primary text-white">bg-primary 사용</p>
+            <p class="bg-secondary text-white">bg-secondary 사용</p>
+            <p class="bg-success text-white">bg-success 사용</p>
+            <p class="bg-info text-white">bg-info 사용</p>
+            <p class="bg-warning text-white">bg-warning 사용</p>
+            <p class="bg-danger text-white">bg-danger 사용</p>
+            <p class="bg-light text-dark">bg-light 사용</p>
+            <p class="bg-dark text-white">bg-dark 사용</p>
+        </div>
+    </div>
+    
+</body>
+</html>

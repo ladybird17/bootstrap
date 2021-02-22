@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <title>문제1</title>
+</head>
+<body>
+    <!--
+    문제 1. grid3.html을 참고하여 사이드바 메뉴와 메인컨텐츠 사이의 거리를
+    grid 크기 1만큼 빈공간이 존재하는 사이트 layout을 작성하세요
+    -->
+    <div class="container">
+        <header class="text-center">
+            <h2>그리드 시스템을 이용한 레이아웃 문제1</h2>
+        </header>
+        <main class="row">
+            <div class="col-md-2">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">메뉴 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">메뉴 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">메뉴 3</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- col-md-9를 사용하여 메인 컨텐츠의 크기를 grid 크기 9만큼 사용-->
+            <!-- offset-md-1을 사용하여 offset 크기 1만큼 사용 -->
+            <div class="col-md-9 offset-md-1">
+                <p>비상계엄이 선포된 때에는 법률이 정하는 바에 의하여 영장제도, 언론·출판·집회·결사의 자유, 정부나 법원의 권한에 관하여 특별한 조치를 할 수 있다.</p>
+                <p>국토와 자원은 국가의 보호를 받으며, 국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다. 헌법재판소는 법률에 저촉되지 아니하는 범위안에서 심판에 관한 절차, 내부규율과 사무처리에 관한 규칙을 제정할 수 있다. 감사위원은 원장의 제청으로 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다.</p>
+            </div>
+        </main>
+        <footer class="text-center">
+            <p>여기는 푸터가 들어가는 곳</p>
+        </footer>
+    </div>
+</body>
+</html>

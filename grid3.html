@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>그리드 시스템을 이용한 레이아웃</title>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center">
+            <h2>그리드 시스템을 이용한 레이아웃</h2>
+        </header>
+        <!-- grid 시스템 사용 -->
+        <!-- row를 사용하여 라인 생성 -->
+        <main class="row">
+            <!-- col-md-2로 사이드바의 크기를 grid 크기 2만큼 사용-->
+            <div class="col-md-2">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">메뉴 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">메뉴 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">메뉴 3</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- col-md-10으로 메인컨텐츠의 크기를 grid 크기 10만큼 사용-->
+            <div class="col-md-10">
+                <p>공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다.</p>
+                <p>탄핵결정은 공직으로부터 파면함에 그친다. 그러나, 이에 의하여 민사상이나 형사상의 책임이 면제되지는 아니한다.</p>
+            </div>
+        </main>
+        <footer class="text-center">
+            <p>여기는 푸터가 들어가는 곳</p>
+        </footer>
+    </div>
+</body>
+</html>

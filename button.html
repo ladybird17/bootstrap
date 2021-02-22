@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부트스트랩 버튼 사용하기</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>부트스트랩 버튼 사용하기</h3>
+        <!--
+        button 태그의 클래스에 btn 클래스를 입력하여 사용
+        접두사 btn- 에 부트스트랩 테마컬러명을 추가하여 색상을 변경할 수 있음
+        -->
+        <button type="button" class="btn">기본 버튼</button>
+    
+        <button type="button" class="btn btn-primary">primary 기본 버튼</button>
+        <button type="button" class="btn btn-secondary">secondary 기본 버튼</button>
+        <button type="button" class="btn btn-success">success 기본 버튼</button>
+        <button type="button" class="btn btn-info">info 기본 버튼</button>
+        <button type="button" class="btn btn-warning">warning 기본 버튼</button>
+        <button type="button" class="btn btn-danger">danger 기본 버튼</button>
+        <button type="button" class="btn btn-dark">dark 기본 버튼</button>
+        <button type="button" class="btn btn-light">light 기본 버튼</button>
+        <button type="button" class="btn btn-link">link 버튼</button>
+        
+        <br><br>
+        <!-- a 태그 및 input type=button, submit, reset에도 사용할 수 있음-->
+        <a href="#" class="btn btn-primary">a 태그에 btn 클래스 사용</a>
+        <input type="button" class="btn btn-success" value="input 태그에 btn클래스 사용">
+        <input type="submit" class="btn btn-info" value="submit에 btn클래스 사용">
+        <input type="reset" class="btn btn-danger" value="reset에 btn클래스 사용">
+
+        <br><hr><br>
+
+        <h3>버튼 모양 변경</h3>
+        <!-- btn-outline-테마색상 클래스를 사용하여 
+            버튼내부가 비어있고 테두리선만 존재하는 버튼형태로 변경 가능-->
+        <button type="button" class="btn btn-outline-primary">outline-primary 버튼</button>
+        <button type="button" class="btn btn-outline-secondary">outline-secondary 버튼</button>
+        <button type="button" class="btn btn-outline-info">outline-info 버튼</button>
+        <button type="button" class="btn btn-outline-success">outline-success 버튼</button>
+        <button type="button" class="btn btn-outline-warning">outline--warning 버튼</button>
+        <button type="button" class="btn btn-outline-danger">outline-danger 버튼</button>
+        <button type="button" class="btn btn-outline-dark">outline-dark 버튼</button>
+        <button type="button" class="btn btn-outline-light">outline-light 버튼</button>
+        
+        <hr>
+
+        <!-- btn-lg, btn-sm 클래스를 추가하여 버튼의 크기 설정 가능 -->
+        <button class="btn btn-primary btn-lg">btn-lg</button>
+        <button class="btn btn-primary">btn default</button>
+        <button class="btn btn-primary btn-sm">btn-sm</button>
+
+        <hr>
+
+        <!-- btn-block 클래스를 추가하면 한 라인 전체를 사용하는 버튼으로 변경 -->
+        <div>
+            <button class="btn btn-primary btn-block">btn-block 사용</button>
+        </div>
+
+        <!-- active 클래스 추가시 버튼을 클릭하고 있는 모양을 출력 -->
+        <!-- disable 속성 추가시 버튼을 비활성화 -->
+        <button class="btn btn-primary active">active 사용하여 사용중인 버튼</button>
+        <button class="btn btn-primary" disabled>disabled 속성을 사용하여 비활성화된 버튼</button>
+
+        <hr>
+        <h3>버튼에 스피너 애니메이션 사용</h3>
+        <!-- 버튼에 span 태그를 추가 후 spinner-border 클래스를 사용하면
+        스피너 애니메이션이 동작되는 버튼을 사용할 수 있음-->
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+        </button>
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>로딩중...
+        </button>
+        <button class="btn btn-primary" disabled>
+            <span class="spinner-border spinner-border-sm"></span>로딩중...
+        </button>
+
+        <br><hr><br>
+
+        <h3>버튼그룹 사용하기</h3>
+        <!--
+            버튼그룹은 연속되는 버튼을 하나의 버튼인것어럼 붙여서 사용하는 방식
+            그룹으로 만들 버튼을 부모태그인 div로 감싸고 btn-group 클래스를 사용
+        -->
+        <h4>기존 버튼</h4>
+        <div>
+            <button class="btn btn-primary">버튼1</button>
+            <button class="btn btn-primary">버튼2</button>
+            <button class="btn btn-primary">버튼3</button>
+        </div>
+        <h4>버튼 그룹</h4>
+        <div class="btn-group">
+            <button class="btn btn-primary">버튼1</button>
+            <button class="btn btn-primary">버튼2</button>
+            <button class="btn btn-primary">버튼3</button>
+        </div>
+        <br><br>
+        <div class="btn-group btn-group-lg">
+            <button class="btn btn-primary">버튼1</button>
+            <button class="btn btn-primary">버튼2</button>
+            <button class="btn btn-primary">버튼3</button>
+        </div>
+        <br><br>
+        <div class="btn-group btn-group-sm">
+            <button class="btn btn-primary">버튼1</button>
+            <button class="btn btn-primary">버튼2</button>
+            <button class="btn btn-primary">버튼3</button>
+        </div>
+    </div>
+</body>
+</html>

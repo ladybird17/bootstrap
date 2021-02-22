@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부트스트랩 이미지</title>
+    
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>부트스트랩 이미지 사용하기</h3>
+        <!--
+        .rounded 클래스 사용시 테두리 부분이 라운드 처리된 이미지가 됨
+        .rounded-circle 클래스 사용시 원형 모양의 이미지가 됨
+        .img-thumbnail 클래스 사용시 이미지 테두리 외부에 테두리 선이 추가됨
+        -->
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="./images/jjang.jpg" width="300px" alt="짱구1" class="rounded">
+            </div>
+            <div class="col-sm-4">
+                <img src="./images/jjang2.jpg" width="300px" alt="짱구2" class="rounded-circle">
+            </div>
+            <div class="col-sm-4">
+                <img src="./images/jjang4.jpg" width="300px" alt="짱구3" class="img-thumbnail">
+            </div>
+        </div>
+
+        <h3>이미지 정렬</h3>
+        <div class="clearfix">
+            <!--
+            float-left, float-right 클래스를 사용하면
+            이미지를 왼쪽, 오른쪽으로 정렬 가능
+            -->
+            <img src="./images/jjang.jpg" width="200px" alt="왼쪽" class="float-left">
+            <img src="./images/jjang2.jpg" width="200px" alt="오른쪽" class="float-right">
+        </div>
+        <div class="clearfix">
+            <img src="./images/jjang4.jpg" width="200px" alt="" class="float-left">
+            <p>이미지 오른쪽에 붙어야하는 글자</p>
+        </div>
+
+        <h3>이미지 중앙정렬하기</h3>
+        <div>
+            <!--
+            - 이미지 중앙정렬하기 : 원래는 이미지태그의 부모태그에 margin-left, margin-right에 auto값을 줘서 중앙정렬했음
+            - 부트스트랩의 mx-auto(margin x라는 뜻), d-block 클래스를 사용하면 중앙정렬됨
+            -->
+            <img src="./images/jjang.jpg" width="300px" alt="" class="mx-auto d-bolck">
+        </div>
+
+        <br>
+
+        <h3>반응형 이미지</h3>
+        <!-- img-fluid 클래스를 사용하면 img 태그의 크기가
+            부모태그의 크기에 맞도록 설정됨-->
+        <div>
+            <img src="./images/tablesetting1.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+</body>
+</html>

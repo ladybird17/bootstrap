@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    grid시스템 사용시 반드시 row를 먼저 입력하고
+    자식태그로 col을 사용해야 함
+    grid의 크기가 12를 초과할 경우 다음 라인으로 라인변경됨
+    -->
+    <style>
+        /*
+        important : 중요한 CSS 속성이라는 의미로
+        !important가 설정된 CSS 속성은 아래에 동일한 속성을
+        다른 설정값으로 변경하더라도 변경되지 않음
+        */
+        #div5 .border{
+            border-color : red !important;
+        }
+    </style>
+    
+    <div id ="div5" class="container" style="box-sizing : border-box">
+        <h3>grid의 크기가 12를 초과할 경우</h3>
+        <div class="row">
+            <div class="col-md-1 border">1</div>
+            <div class="col-md-1 border">2</div>
+            <div class="col-md-1 border">3</div>
+            <div class="col-md-1 border">4</div>
+            <div class="col-md-1 border">5</div>
+            <div class="col-md-1 border">6</div>
+            <div class="col-md-1 border">7</div>
+            <div class="col-md-1 border">8</div>
+            <div class="col-md-1 border">9</div>
+            <div class="col-md-1 border">10</div>
+            <div class="col-md-1 border">11</div>
+            <div class="col-md-1 border">12</div>
+            <div class="col-md-1 border">13</div>
+        </div>
+        <br>
+        <!--
+            grid 최대한 한 라인에 12를 맞춰야함
+            grid 크기가 12를 초과하지 않으면 크게 상관없음
+        -->
+        <h3>grid가 12미만일 경우</h3>
+        <div class="row">
+            <div class="col-md-2 border">2</div>
+            <div class="col-md-2 border">4</div>
+            <div class="col-md-2 border">6</div>
+            <div class="col-md-2 border">8</div>
+            <div class="col-md-2 border">10</div>
+        </div>
+    </div>
+
+    <!-- 
+        offset을 사용하면 중간에 원하는 크기의
+        빈공간을 생성 가능
+        (offset-반응형웹 크기-칸의 수)
+    -->
+    <h3>grid 시스템 사용시 중간에 컨텐츠가 없는 빈공간 만들기</h3>
+    <div class="row">
+        <div class="col-md-2 border">2</div>
+        <div class="col-md-2 border">4</div>
+        <div class="col-md-2 border">6</div>
+        <div class="col-md-2 offset-md-2 border">10</div>
+        <div class="col-md-2 border">12</div>
+    </div>
+
+    <br><hr><br>
+    <!--
+        grid 시스템을 사용하여 
+        grid 시스템의 column안에 column 만들기
+    -->
+    <h3>grid column 안에 grid column</h3>
+    <div id="div6" class="container">
+        <div class="row">
+            <div class="col-md-8" style="border: 1px solid red">.col-md-8
+                <div class="row">
+                    <div class="col-md-4" style="border: 1px dashed blue">내부 12개 grid중 3칸짜리 1번</div>
+                    <div class="col-md-4" style="border: 1px dashed blue">내부 12개 grid중 3칸짜리 2번</div>
+                    <div class="col-md-4" style="border: 1px dashed blue">내부 12개 grid중 3칸짜리 3번</div>
+                </div>
+            </div>
+            <div class="col-md-4" style="border: 1px solid red">.col-md-4
+                <div class="row">
+                    <div class="col-md-6" style="border: 1px dashed blue">6칸짜리 1번</div>
+                    <div class="col-md-6" style="border: 1px dashed blue">6칸짜리 2번</div>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        grid 시스템을 이용한 반응형 웹의 기준
+        X : 1~12를 뜻함
+        .col-X : 가장 작은 크기로 사용. 576px 미만
+        .col-sm-X : 작은 디바이스의 크기. 576px 이상
+        .col-md-X : 중형 디바이스의 크기. 768px 이상
+        .col-lg-X : 대형 디바이스의 크기. 992px 이상
+        .col-xl-X : 가장 큰 디바이스의 크기. 1200px 이상
+    -->
+
+</body>
+</html>
