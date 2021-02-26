@@ -86,14 +86,16 @@
       <!-- 부모 태그인 div에 clearfix 클래스를 사용하고, 자식 태그에 float-left, float-right 를 사용하여 css의 float을 쉽게 사용함 -->
       
       <div class="nobs">
-        <img src="./images/pengsu05.jpg" alt="">
-        <p>펭수 이미지 입니다.</p>
+        <img src="./images/jjang.jpg" width="300px" alt="">
+        <p>짱구 이미지 입니다.</p>
       </div>
       <div class="clearfix">
-        <img src="./images/pengsu05.jpg" alt="" class="float-left">
-        <p class="float-right">펭수 이미지 입니다.</p>
+        <img src="./images/jjang2.jpg" width="300px" alt="" class="float-left">
+        <p class="float-right">짱구 브런치 때리는 이미지 입니다.</p>
       </div>
+
       <hr>
+
       <h3>반응형 float</h3>
       <!-- float-크기-left,right 를 사용하면 float이 반응형웹이 적용 됨 -->
       <!-- float-none 사용 시 float 을 사용하지 않음 -->
@@ -106,6 +108,8 @@
       </div>
     </div>
 
+    <br>
+    
     <div id="div05">
       <h3>중앙 정렬</h3>
       <!-- margin-left, margin-right의 값을 auto로 주면 중앙정렬되는 것을 부트스트랩의 mx-auto 클래스로 사용할 수 있음 -->
@@ -175,7 +179,119 @@
       <div class="shadow-lg p-4 mb-4 bg-white">큰 그림자</div>
     </div>
 
+    <br><hr><br>
     
+    <!--
+      2월 26일 수업
+    -->
+
+    <div id="div07">
+      <h3>수직 정렬</h3>
+      <!--
+      align-[위치] 클래스를 사용하여 인라인, 인라인블럭, 테이블셀 영역에서 수직 정렬 가능.
+      인라인 및 인라인 블럭이 아닌 경우 flexbox 사용하여 수직 정렬.
+      -->
+      <span class="align-baseline">baseline</span>
+      <span class="align-top">top</span>
+      <span class="align-middle">middle</span>
+      <span class="align-bottom">bottom</span>
+      <span class="align-text-top">text-top</span>
+      <span class="align-text-bottom">text-bottom</span>
+    </div>
+
+    <hr>
+
+    <div id="div08">
+      <h3>반응형 삽입</h3>
+      <!-- 
+      video 태그 및 슬라이드쇼를 사용할 때 반응형 웹 적용할 경우 사용.
+      iframe 태그에 사용시 효과적.
+      div 태그에 embed-responsive 클래스를 사용하고, 
+      iframe 태그에 embed-responsive-item 클래스를 추가하여 사용.
+      iframe 태그에 들어갈 컨텐츠의 비율에 따라 embed-responsive-xxbyxx 를
+      div 태그에 추가 (16:9는 16by9, 4:3은 4by3)
+      -->
+      <h4>1:1 화면</h4>
+      <div class="embed-responsive embed-responsive-1by1">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yT3rQ_KwCXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <br><br>
+
+      <h4>4:5 화면</h4>
+      <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yT3rQ_KwCXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <br><br>
+
+      <h4>16:9 화면</h4>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yT3rQ_KwCXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="div09">
+      <h3>visible, invisible 사용</h3>
+      <!--css 속성 visibility의 visible, hidden을 사용한 것-->
+      <div class="visible bg-success">visible 사용</div>
+      <div class="invisible bg-info" id="div09Invisible">invisible 사용</div>
+      <button id="btnVisible" class="btn btn-info">클릭시 invisible 클래스 추가</button>
+      <script>
+        $("#btnVisible").on("click",function(){
+          $("#div09Invisible").toggleClass("invisible");
+        });
+      </script>
+    </div>
+
+    <hr>
+
+    <div id="div10">
+      <h3>부트스트랩에서 display 속성 적용하기</h3>
+      <!--
+      css의 display 속성을 d-[반응형크기]-속성값1-[속성값2] 형태로
+      사용할 수 있음.
+      d : display 를 뜻함
+      반응형 크기 : sm(576px이상), md(768px이상), lg(992px이상), xl(1200px이상),
+                    반응형 크기가 없을 경우 모든 크기에서 적용.
+      속성값 1 : none, block, inline, flex, table (속성값1은 필수로 사용)
+      속성값 2 : block, flex, row, cell (row, cell은 속성값1이 table일 경우)
+      -->
+      <span class="bg-success d-block">d-block</span>
+      <span class="bg-success d-sm-block">d-sm-block</span>
+      <span class="bg-success d-md-block">d-md-block</span>
+      <span class="bg-success d-lg-block">d-lg-block</span>
+      <span class="bg-success d-xl-block">d-xl-block</span>
+      <!-- 각 일정 크기 이하로 내려가면 inline 방식으로 바뀌게됨 -->
+    </div>
+
+    <hr>
+
+    <!--
+      고정형 네비게이션바
+      nav 태그에 fixed-top, fixed-bottom을 사용하면 네비게이션바가 상단 또는 하단에 고정됨.
+    -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <a href="#" class="navbar-brand">Home</a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">링크1</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">링크2</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">링크3</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+      <a href="#" class="navbar-brand">Home</a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">링크1</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">링크2</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">링크3</a></li>
+      </ul>
+    </nav>
   </div>
 
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
