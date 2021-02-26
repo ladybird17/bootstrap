@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>템플릿 ui 페이지 만들기</title>
+    <!-- https://www.w3schools.com/bootstrap4/trybs_template1.htm -->
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+
+    <style>
+        .fakeimg{
+            height: 200px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="jumbotron text-center mb-0">
+            <h1>My First Bootstrap 4 Page</h1>
+            <p>Resize this responsive page to see the effect!</p>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <a href="#home" class="navbar-brand">Home</a>
+            <!-- 반응형. 작아졌을때 메뉴바 접었다 폈다 가능한 버튼 -->
+            <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">링크 1</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">링크 2</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">링크 3</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4"><!-- nav바와 마진띄우기 -->
+        <div class="row">
+            <!-- 사이드바 -->
+            <div class="col-sm-4">
+                <h2>About me</h2>
+                <h5>Photo of me : </h5>
+                <div class="fakeimg"></div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                <h3>some link</h3>
+                <p>Lorem ipsum dolor sit ame.</p>
+                <ul class="nav nav-pills d-flex flex-column"><!--nav바를 세로정렬로 변경-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 메인 컨텐츠 -->
+            <div class="col-sm-8">
+                <div class="mb-3">
+                    <h2>타이틀 제목</h2>
+                    <h5>부제목...</h5>
+                    <div class="fakeimg"></div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div>
+                <div class="mb-3">
+                    <h2>타이틀 제목</h2>
+                    <h5>부제목...</h5>
+                    <div class="fakeimg"></div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="jumbotron text-center mb-0">
+        <p>footer</p>
+    </footer>
+</body>
+</html>
