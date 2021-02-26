@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h3>모달창</h3>
+    <!-- 모달창은 현재 페이지 상단에 표시되는 팝업창 -->
+    <!-- 현재 페이지에서 평상시에는 숨겨져 있다가 이벤트 발생시 화면에 표시하는 방식 -->
+    <!-- div 태그에 modal 클래스를 추가하고, id도 선언하여 사용 -->
+    <!-- 주로 button에 사용자속성 data-toggle="modal", data-target="모달영역 id값" 을 선언하여 사용함-->
+    <!-- modal을 사용한 태그의 자식 태그로 modal-dialog 클래스를 사용한 div태그가 존재하며, 그 아래에 modal-content 클래스를 사용한 div 태그가 존재함 -->
+    <!-- modal-content는 modal-header, modal-body, modal-footer 클래스를 사용한 div 태그를 가지고 있음 -->
+    <!-- modal 클래스에 fade 클래스를 추가하면 애니메이션 효과가 발생함 -->
+    <!-- modal-dialog 뒤에 modal-sm, modal-lg, modal-xl 클래스를 추가하면 모달창의 크기를 변경할 수 있음 -->
+    <!-- modal-dialog 뒤에 modal-dialog-centered를 사용하면 화면 정중앙에 출력되는 모달창을 사용할 수 있음 -->
+    <!-- modal-dialog 뒤에 modal-dialog-scrollable를 사용하면 모달창보다 컨텐츠의 크기가 클 경우 스크롤바가 생성되어 스크롤을 사용할 수 있음 -->
+
+    <div>
+      <h3>기본 모달창</h3>
+      <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal1">모달창 열기</button>
+
+      <div class="modal fade" id="modal1">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">모달창 헤더 영역</h4>
+              <button class="close" type="button" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <h4>모달창 바디 영역</h4>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" type="button" data-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal2">모달창 열기</button>
+
+      <div class="modal fade" id="modal2">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4>정중앙에 표시되는 모달창</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              모달창 화면에 출력
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3>스크롤이 없는 모달창</h3>
+      
+      <button class="btn btn-primary" data-toggle="modal" data-target="#modal3">스크롤이 없는 모달창 열기</button>
+      <div class="modal" id="modal3">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title">스크롤 없는 모달창</h1>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>Usage
+              Bootstrap Icons are SVGs, so you can include them into your HTML in a few ways depending on how your project is setup. Bootstrap Icons include a width and height of 1em by default to allow for easy resizing via font-size.</p>
+              <p>Embedded
+              Embed your icons within the HTML of your page (as opposed to an external image file). Here we’ve used a custom width and height.</p>
+              <p>Sprite
+                Use the SVG sprite to insert any icon through the <use> element. Use the icon’s filename as the fragment identifier (e.g., toggles is #toggles). SVG sprites allow you to reference an external file similar to an  element, but with the power of currentColor for easy theming.</p>
+                  <p>정부는 오는 26일부터 코로나19 예방접종이 시작되더라도 접종의 효과가 나타나기까지 오랜 시간이 필요하기 때문에 계속해서 방역수칙을 철저히 지켜야 한다고 당부했다.
+
+                    중앙사고수습본부 손영래 전략기획반장은 25일 "예방접종이 시작되며 심리적으로 거리두기가 느슨해지는 현상이 나타날지도 모른다는 점을 가장 우려하고 있다"며 "접종이 시작되도 접종 대상은 단계적으로 확대될 것이고, 접종 효과도 두어달의 시차를 두고 나타나기 때문에 사회적으로 코로나19의 위험도가 감소하는 것은 뒤쳐지게 된다"고 말했다.
+                    
+                    특히, 정부는 이날 지역사회 신규확진자가 369명으로 집계되는 등 설 연휴로 인한 급격한 증가세는 나타나지 않고 있지만, 안심하기는 이르다는 입장이다.
+                    
+                    손 반장은 "확진자 추이는 지켜봐야겠지만, 그래도 설 연휴로 인한 급격한 증가 추이가 나타나지 않는 점은 긍정적이라 한다"면서도 "예방접종의 효과가 나올 때까지 긴장을 풀지 않고, 거리두기와 방역수칙을 지켜서 재확산이 없도록 도와주시길 당부드린다"고 언급했다.
+                    
+                    아울러, 정부는 예방접종에 대한 국민들의 적극적인 참여를 당부하기도 했다. 특히, 고령층에 대한 예방효과 논란을 빚은 아스트라제네카 백신에 대해서 손 반장은 "영국에서만 500만 명 이상이 접종했지만 큰 문제 없이 접종이 전개되고 있고, 효과성 자료도 나온 바 있다"고 소개했다.
+                    
+                    
+                    
+                    경기도 이천시 지트리비앤티 물류센터에서 출발한 아스트라제네카 백신 배송차량이 25일 오전 경기도 수원시 권선구보건소에 배송 후 다음 지역으로 출발하고 있다. 사진공동취재단
+                    이어 "우리나라는 이제 시작되는 것으로 세계적으로 수천만 명이 접종해 검증되는 부분이 크기 때문에 당국의 설명을 신뢰해주시고 예방접종에 참여해달라"고 덧붙였다.
+                    
+                    한편, 정부는 26일에 다음주부터 적용될 거리두기 단계를 발표할 예정이다.
+                    
+                    정부는 최근 방역관리 상황을 고려해 5인 이상 사적 모임 금지 조치를 포함한 방역 수준을 결정한다는 방침인데, 불안한 국면이 계속되고 있어 큰 폭으로 방역수칙이 조정되지는 않을 전망이다.
+                    
+                    일각에서는 방역수칙 위반자에게 부과하는 과태료를 현행 10만 원에서 20만 원으로 상향할 것이라는 관측도 나왔지만, 정부는 선을 그었다.
+                    
+                    중수본 윤태호 방역총괄반장은 "과태료를 상향하기 위해서는 감염병예방법 개정이 필요한데, 여러 의견이 있을 수는 있지만 정부에서 이 부분에 대해 공식 논의한 바는 없다"고 전했다</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>스크롤이 있는 모달창</h3>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#modal4">스크롤이 있는 모달창 열기</button>
+      <div class="modal" id="modal4">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title">스크롤이 있는 모달창</h1>
+              <button class="close" type="button" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>Usage
+                Bootstrap Icons are SVGs, so you can include them into your HTML in a few ways depending on how your project is setup. Bootstrap Icons include a width and height of 1em by default to allow for easy resizing via font-size.</p>
+                <p>Embedded
+                Embed your icons within the HTML of your page (as opposed to an external image file). Here we’ve used a custom width and height.</p>
+                <p>Sprite
+                  Use the SVG sprite to insert any icon through the <use> element. Use the icon’s filename as the fragment identifier (e.g., toggles is #toggles). SVG sprites allow you to reference an external file similar to an  element, but with the power of currentColor for easy theming.</p>
+                    <p>정부는 오는 26일부터 코로나19 예방접종이 시작되더라도 접종의 효과가 나타나기까지 오랜 시간이 필요하기 때문에 계속해서 방역수칙을 철저히 지켜야 한다고 당부했다.
+  
+                      중앙사고수습본부 손영래 전략기획반장은 25일 "예방접종이 시작되며 심리적으로 거리두기가 느슨해지는 현상이 나타날지도 모른다는 점을 가장 우려하고 있다"며 "접종이 시작되도 접종 대상은 단계적으로 확대될 것이고, 접종 효과도 두어달의 시차를 두고 나타나기 때문에 사회적으로 코로나19의 위험도가 감소하는 것은 뒤쳐지게 된다"고 말했다.
+                      
+                      특히, 정부는 이날 지역사회 신규확진자가 369명으로 집계되는 등 설 연휴로 인한 급격한 증가세는 나타나지 않고 있지만, 안심하기는 이르다는 입장이다.
+                      
+                      손 반장은 "확진자 추이는 지켜봐야겠지만, 그래도 설 연휴로 인한 급격한 증가 추이가 나타나지 않는 점은 긍정적이라 한다"면서도 "예방접종의 효과가 나올 때까지 긴장을 풀지 않고, 거리두기와 방역수칙을 지켜서 재확산이 없도록 도와주시길 당부드린다"고 언급했다.
+                      
+                      아울러, 정부는 예방접종에 대한 국민들의 적극적인 참여를 당부하기도 했다. 특히, 고령층에 대한 예방효과 논란을 빚은 아스트라제네카 백신에 대해서 손 반장은 "영국에서만 500만 명 이상이 접종했지만 큰 문제 없이 접종이 전개되고 있고, 효과성 자료도 나온 바 있다"고 소개했다.
+                      
+                      
+                      
+                      경기도 이천시 지트리비앤티 물류센터에서 출발한 아스트라제네카 백신 배송차량이 25일 오전 경기도 수원시 권선구보건소에 배송 후 다음 지역으로 출발하고 있다. 사진공동취재단
+                      이어 "우리나라는 이제 시작되는 것으로 세계적으로 수천만 명이 접종해 검증되는 부분이 크기 때문에 당국의 설명을 신뢰해주시고 예방접종에 참여해달라"고 덧붙였다.
+                      
+                      한편, 정부는 26일에 다음주부터 적용될 거리두기 단계를 발표할 예정이다.
+                      
+                      정부는 최근 방역관리 상황을 고려해 5인 이상 사적 모임 금지 조치를 포함한 방역 수준을 결정한다는 방침인데, 불안한 국면이 계속되고 있어 큰 폭으로 방역수칙이 조정되지는 않을 전망이다.
+                      
+                      일각에서는 방역수칙 위반자에게 부과하는 과태료를 현행 10만 원에서 20만 원으로 상향할 것이라는 관측도 나왔지만, 정부는 선을 그었다.
+                      
+                      중수본 윤태호 방역총괄반장은 "과태료를 상향하기 위해서는 감염병예방법 개정이 필요한데, 여러 의견이 있을 수는 있지만 정부에서 이 부분에 대해 공식 논의한 바는 없다"고 전했다</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" type="button" data-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
