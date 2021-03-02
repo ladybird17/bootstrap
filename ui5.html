@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+    문제 5. https://getbootstrap.com/docs/4.0/examples/album/ 참고하여
+    부트스트랩 앨범 레이아웃 페이지 만들어보기
+    -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- bootstrap의 icon 사용하기 -->
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <!-- External content -->
+    <div class="collapse bg-dark" id="navbarInfo">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-sm-8 text-white">
+                    <h4>About</h4>
+                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits.
+                        Then, link them off to some social networking sites or contact information.
+                    </p>
+                </div>
+                <div class="col-sm-2">
+                    <h4 class="text-white">Contact</h4>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-white">Follow on Twitter</a>
+                        <a href="#" class="text-white">Like on Facebook</a>
+                        <a href="#" class="text-white">Email me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand font-weight-bold">
+                <i class="bi bi-camera mr-2" style="font-size: 1.5rem; color: white;"></i>
+                Album
+            </a>
+            <!-- External content button -->
+            <button type="button" class="btn btn-outline-secondary" data-toggle="collapse" data-target="#navbarInfo">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <header class="container text-center py-5">
+        <div class="row py-md-5">
+            <div class="col-md-7 mx-auto">
+                <h1 class="font-weight-normal">Album example</h1>
+                <p class="lead text-muted">Something short and leading about the collection below—its contents, 
+                    the creator, etc. Make it short and sweet, 
+                    but not too short so folks don't simply skip over it entirely.
+                </p>
+                <div>
+                    <a href="#" class="btn btn-primary">Main call to action</a>
+                    <a href="#" class="btn btn-secondary">Secondary action</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="py-5 bg-light"> <!--container를 넣으면 중간부분에만 색이 들어가기 때문에 전체 색 넣으려면 -->
+        <div class="container row mt-3 mx-auto">
+            <div class="col-sm-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark d-flex justify-content-center" style="height: 220px;">
+                        <h5 class="text-white font-weigth-normal align-self-center">Thumnail</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <p class="text-secondary m-0 p-0">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark d-flex justify-content-center" style="height: 220px;">
+                        <h5 class="text-white font-weigth-normal align-self-center">Thumnail</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <p class="text-secondary m-0 p-0">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark d-flex justify-content-center" style="height: 220px;">
+                        <h5 class="text-white font-weigth-normal align-self-center">Thumnail</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <p class="text-secondary m-0 p-0">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container row mt-3 mx-auto">
+            <div class="col-sm-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark d-flex justify-content-center" style="height: 220px;">
+                        <h5 class="text-white font-weigth-normal align-self-center">Thumnail</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <p class="text-secondary m-0 p-0">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark d-flex justify-content-center" style="height: 220px;">
+                        <h5 class="text-white font-weigth-normal align-self-center">Thumnail</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <p class="text-secondary m-0 p-0">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark d-flex justify-content-center" style="height: 220px;">
+                        <h5 class="text-white font-weigth-normal align-self-center">Thumnail</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <p class="text-secondary m-0 p-0">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container row mt-3 mx-auto">
+            <div class="col-sm-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark d-flex justify-content-center" style="height: 220px;">
+                        <h5 class="text-white font-weigth-normal align-self-center">Thumnail</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <p class="text-secondary m-0 p-0">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark d-flex justify-content-center" style="height: 220px;">
+                        <h5 class="text-white font-weigth-normal align-self-center">Thumnail</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <p class="text-secondary m-0 p-0">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark d-flex justify-content-center" style="height: 220px;">
+                        <h5 class="text-white font-weigth-normal align-self-center">Thumnail</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <p class="text-secondary m-0 p-0">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="container py-5 text-muted">
+        <div class="d-sm-flex justify-content-sm-between">
+            <div>
+                <small>Album example is © Bootstrap, but please download and customize it for yourself!</small><br>
+                <small>New to Bootstrap? <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">getting started guide</a>.</small>
+            </div>
+            <div>
+                <small><a href="#">Back to top</a></small>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
